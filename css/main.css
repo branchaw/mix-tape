@@ -27,6 +27,15 @@ img {
 	
 }
 
+#subscribe {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#success{
+	display: none;
+}
+
 #footer {
   container: 100%;
 	text-align: center;

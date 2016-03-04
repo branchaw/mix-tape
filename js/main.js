@@ -24,6 +24,7 @@ $(document).ready(function() {
         "your-email": "Enter a valid email address."
          }
       }
+		   
     });
   
   //limits name fields to letters only.	
@@ -34,6 +35,9 @@ $(document).ready(function() {
   // Bootstrap tooltips
    $('label span.glyphicon').tooltip();
   
-  
-  
+	//alert tied to submit button click.
+   $('#submit').on('click', function() {
+     $('#success').show();
+       });
+
 });
