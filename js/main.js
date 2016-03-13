@@ -24,20 +24,37 @@ $(document).ready(function() {
         "your-email": "Enter a valid email address."
          }
       }
-		   
+		
     });
   
   //limits name fields to letters only.	
 	 $.validator.addMethod( "lettersonly", function( value, element ) {
 		return this.optional( element ) || /^[a-z]+$/i.test( value );
 	 });
+	
+  /*  $('form > input').keyup(function() {
+
+        var empty = false;
+        $('form > input').each(function() {
+            if ($(this).val() === '') {
+                empty = true;
+            }
+        });
+
+        if (empty) {
+            $('#submit').attr('disabled', 'disabled'); 
+        } else {
+            $('#submit').removeAttr('disabled'); 
+        }
+    }); */
   
   // Bootstrap tooltips
    $('label span.glyphicon').tooltip();
   
 	//alert tied to submit button click.
-   $('#submit').on('click', function() {
+  $('#submit').on('click', function() {
      $('#success').show();
        });
 
+	
 });

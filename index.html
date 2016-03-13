@@ -66,7 +66,7 @@
             </div>
           </nav>       
          
-          <div class="jumbotron">
+          <div class="jumbotron" id="intro">
             <div class="container">
               <h1 id="home">
                 Listen to <span class="glyphicon glyphicon-headphones"></span>theMixTape
@@ -82,25 +82,28 @@
             </div>
       </div>
  
-        
-         <!-- TODO: Rearrange with bootstrap to fall next to image.   -->
       <div id="vid" class="container">
-        <div class="row">
-           <div id="cassette" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="row row-centered">
+      
+             <!-- How to embed without api 
+                <div><iframe id="ytplayer" type="text/html" width="720" height="405"
+                    src="https://www.youtube.com/embed/?listType=playlist&list=PLklIfj0e_xwDFbyw4LyIvv0b3bH_jE0-a"
+                    frameborder="0" allowfullscreen></div> -->
+      
+          <div id="player-container" class="col-xs-12 col-sm-6 col-md-8 col-lg-8 col-centered">
+            <h3><b>Check out DJ Query's latest mix.</b></h3>
+               
+          <!-- The <iframe> (and video player) will replace this <div> tag. class="col-lg-6 col-md-6 col-sm-12 col-xs-12" -->
+            <div id="player" class="col-xs-12 col-sm-6 col-md-8 col-lg-8 col-centered">
+            </div> 
+          </div>
+          
+           <div id="cassette"  class="col-xs-6 col-med-4 col-lg-4 col-centered">
+             <h3><b>FREE access to DJ archives.</b></h3>
             <img src="Design/cassette.png" id="cassette" class="img-responsive" alt="Responsive image of cassette tape">
-           </div>
-       
-          <!-- TODO: Style Iframe and set parameters for display. -->
-      
-             <!-- <div>
-                <iframe id="ytplayer" type="text/html" width="720" height="405"
-        src="https://www.youtube.com/embed/?listType=playlist&list=PLklIfj0e_xwDFbyw4LyIvv0b3bH_jE0-a"
-        frameborder="0" allowfullscreen>
-              </div> -->
-      
-          <!-- The <iframe> (and video player) will replace this <div> tag. -->
-           <div id="player" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-           </div>            
+             <h3><b>Subscribe below and get<br /> <span class="glyphicon glyphicon-headphones"></span>theMixTape today.</b></h3> 
+          </div>
+          
          </div>
       </div>
             <script>	
@@ -156,16 +159,13 @@
                 player.stopVideo();
               }
            </script>
-          
       
-      
-          <!-- TODO:
-                      Style subscription form. 
-                      *Event handler listens for on click.
-                      *Deliver success alert. -->
+          <!-- Subscription form -->
           <div>
-           <form id="subscribe" role="form">
-              
+           <form id="subscribe" role="form" action="#success" method="get">
+              <legend>
+                Subscribe to <span class="glyphicon glyphicon-headphones"></span>theMixTape
+             </legend>
                <div class="form-group">
                 <label for="your-name"><span class="glyphicon glyphicon-question-sign" title="Your first and last name."></span> Your Name</label>
                 <input type="text" class="form-control" name="your-name" id="your-name" placeholder="Your Name" required>
@@ -186,7 +186,7 @@
             <!-- Dismissable "success" alert message. -->
             <div id="success" class="alert alert-success alert-dismissible" role="alert">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <strong>Success!</strong> You successfully read this important alert message.
+              <strong>Success!</strong> You successfully subscribed to <span class="glyphicon glyphicon-headphones"></span>theMixTape.
             </div>
       
           <!-- Footer -->              
@@ -198,12 +198,10 @@
              </footer>
             </div>
       
-         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/jquery.validate.min.js"></script>
-
         <script src="js/main.js"></script>
       
     </body>
