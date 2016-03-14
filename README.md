@@ -1,10 +1,14 @@
 # mix-tape
 Final project for WATS 1020 
 
-The MixTape.com is a webpage that has featured DJs create weekly video playlists for MixTape. 
+theMixTape.com is a webpage featuring DJs who create free weekly video playlists for subscribers. 
 
-The site will be built using bootstrap.
+The site was built using bootstrap.
 
-Video playlists will be embedded using YouTube API.  
+Video playlist will be embedded using YouTube API.  
 
-Subscribers will join the email list to get notification of new playlists as they are posted and links to archived content. They will fill out the form to join by entering a name and email address. When the form is validated they will get a “success” message.
+Subscribers join the email list to get notification of new playlists as they are posted and links to archived content. 
+
+The subscription form requires entering a name (letters only) and a valid email address. Form is validated using jQuery. 
+
+A “success” message appears after the submit button has been clicked.
