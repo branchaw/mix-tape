@@ -5,9 +5,9 @@ theMixTape.com is a webpage featuring DJs who create free weekly video playlists
 
 The site was built using bootstrap.
 
-Video playlist will be embedded using YouTube API.  
+Video playlist is embedded using YouTube API.  
 
-Subscribers join the email list to get notification of new playlists as they are posted and links to archived content. 
+Subscribers join an email list to get notification of new playlists as they are posted and links to archived content. 
 
 The subscription form requires entering a name (letters only) and a valid email address. Form is validated using jQuery. 
 
